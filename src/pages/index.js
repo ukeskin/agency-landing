@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -51,7 +49,7 @@ export default function Home() {
         </div>
         <div
           id=":R5a:"
-          style={{ height: isMenuOpen ? "0.5rem" : "100%" }}
+          style={{ height: isMenuOpen ? "100%" : "0.5rem" }}
           className="relative z-50 overflow-hidden bg-neutral-950 pt-2"
           aria-hidden="true"
           inert
